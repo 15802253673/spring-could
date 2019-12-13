@@ -18,12 +18,8 @@ public class Controller {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    private final String currentApplicationName;
-
-    @Autowired
-    public Controller(@Value("${spring.application.name}") String currentApplicationName) {
-        this.currentApplicationName = currentApplicationName;
-    }
+    @Value("${spring.application.name}")
+    private String currentApplicationName;
 
     /**
      * 获取当前应用信息
@@ -32,10 +28,11 @@ public class Controller {
      */
     @RequestMapping("getCurrentServiceInstance")
     public ServiceInstance getCurrentServiceInstance() {
-        List<ServiceInstance> serviceInstance = getServiceInstance();
-        serviceInstance.forEach(serverName -> {
-            System.out.println(serverName);
-        });
+        return null;
+    }
+
+
+    private ServiceInstance getServiceInstance(ServiceInstance object) {
         return null;
     }
 
