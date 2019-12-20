@@ -20,6 +20,13 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.yyl</groupId>
+			<artifactId>spring-cloud-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -75,5 +82,7 @@
 		<module>spring-cloud-eureka-client</module>
 		<module>spring-cloud-config-server</module>
 		<module>spring-cloud-consul-client</module>
+		<module>spring-cloud-server-provider</module>
+		<module>spring-cloud-common</module>
 	</modules>
 </project>
