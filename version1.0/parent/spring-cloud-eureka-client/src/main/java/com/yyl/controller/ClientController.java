@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by admin on 2019/12/16.
+ * @Description: 
+ * @ClassName: ClientController
+ * @Author: yyl
+ * @Date: 2020/1/6 16:17
  */
-
 @RestController
 public class ClientController {
 
