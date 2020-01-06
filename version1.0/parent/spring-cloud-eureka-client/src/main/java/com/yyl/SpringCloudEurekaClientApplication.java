@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 //@EnableEurekaClient //绑定Eureka
 @EnableDiscoveryClient //可绑定自己的实现
-@RibbonClients({@RibbonClient(name="spring-cloud-service-provider")})
+@RibbonClients({@RibbonClient(name="spring-cloud-server-provider")})
 public class SpringCloudEurekaClientApplication {
 
 	public static void main(String[] args) {
